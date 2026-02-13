@@ -3,3 +3,4 @@ moodle_rest.txt >>> for moodle vuln in /webservice/rest/server.php
 graphql.txt >>> for graphql vuln in /graphql or /api/graphql
 sqli-assassin.txt >>> for sqli but simplify only attack the critical not massive
 lfi-payloads.txt >>> for LFI
+rce-payloads.txt >>> for RCE
