@@ -7,3 +7,4 @@ rce-payloads.txt >>> for RCE
 cloud-leaks.txt >>> cloud leaks
 ssrf-payloads.txt >>> ssrf-payloads vuln
 403-bypass.txt >>> for bypass bullsh't 403
+xss-payloads.txt >>> bruh xss
