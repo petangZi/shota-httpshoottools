@@ -34,7 +34,7 @@ EOF
 ### Step 2: Run Basic Test
 
 ```bash
-python shota.py https://virtualclass.smpm12gkb.sch.id/lib/ajax/service.php \
+python shota.py https://targeted.ajax.com/lib/ajax/service.php \
   -p test.txt \
   -d 2
 ```
@@ -42,7 +42,7 @@ python shota.py https://virtualclass.smpm12gkb.sch.id/lib/ajax/service.php \
 ### Step 3: Use Pre-built Moodle Wordlist
 
 ```bash
-python shota.py https://virtualclass.smpm12gkb.sch.id/lib/ajax/service.php \
+python shota.py https://targeted.com/lib/ajax/service.php \
   -p wordlists/api-moodle.txt \
   -d 2 \
   -v
