@@ -1,1 +1,2 @@
-moodle_leak.txt
+moodle.txt >>> for moodle vuln in lib/ajax/services.php
+moodle_rest.txt >>> for moodle vuln in /webservice/rest/server.php
