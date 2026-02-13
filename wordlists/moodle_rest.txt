@@ -1,0 +1,6 @@
+[{"wstoken": "{{TOKEN}}", "wsfunction": "core_webservice_get_site_info", "moodlewsrestformat": "json"}]
+[{"wstoken": "{{TOKEN}}", "wsfunction": "core_user_get_users_by_field", "moodlewsrestformat": "json", "field": "id", "values[0]": 1}]
+[{"wstoken": "{{TOKEN}}", "wsfunction": "core_enrol_get_users_enrolled_in_course", "moodlewsrestformat": "json", "courseid": 1}]
+[{"wstoken": "{{TOKEN}}", "wsfunction": "tool_mobile_get_public_config", "moodlewsrestformat": "json"}]
+[{"wstoken": "{{TOKEN}}", "wsfunction": "auth_email_get_signup_settings", "moodlewsrestformat": "json"}]
+[{"wstoken": "{{TOKEN}}", "wsfunction": "core_course_get_categories", "moodlewsrestformat": "json"}]
