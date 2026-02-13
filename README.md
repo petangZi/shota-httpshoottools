@@ -107,7 +107,7 @@ pip --version
 
 ```bash
 # Clone repository
-git clone https://github.com/redzhardtekk/shota.git
+git clone https://github.com/petangZi/shota-httpshoottools.git
 cd shota
 
 # Install dependencies
