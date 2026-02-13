@@ -1,0 +1,3 @@
+{"query": "{__schema{types{name,fields{name}}}}"} 
+{"query": "query { users { id, username, email, password, role } }"}
+{"query": "mutation { updateUser(id: 1, role: \"admin\") { id, role } }"}
